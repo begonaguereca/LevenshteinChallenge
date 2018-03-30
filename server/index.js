@@ -1,19 +1,18 @@
-var express = require('express');
-var bodyParser = require('body-parser');
+const express = require('express');
+const bodyParser = require('body-parser');
+const pathFinder = require('./logic/InstatiateGraph.js');
 
-var app = express();
-
+const app = express();
 
 app.use(express.static(__dirname + '/../react-client/dist'));
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json())
 
-app.get('/items', function (req, res) {
-  const words = require('an-array-of-english-words')
-  //console.log('here', words);
-  res.json(words);
-
-
+app.get('/path', function (req, res) {
+  console.log('hereeee')
+  // let answer = pathFinder.graph.bestPath('HEALTH', 'HANDS', [1,5,6,7]);
+  // console.log('here',answer);
+  // res.json(words);
 });
 
 app.listen(3000, function() {
