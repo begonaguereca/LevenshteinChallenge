@@ -1,8 +1,7 @@
 # LevenshteinChallenge
 
 Transform one word into another, with four operations: add a letter,
-delete a letter, change a letter, and take an anagram of the existing word. Additionally, you have to obey
-the following rules:
+delete a letter, change a letter, and take an anagram of the existing word. Additionally, there are the following rules:
 - Every interim step between the first and the last word must also be a word
 - No interim step can be less than three letters
 - The first line of input will contain the “cost” of each operation in the order above
