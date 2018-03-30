@@ -9,10 +9,7 @@ the following rules:
 - The second line of input will contain the starting word
 - The third line of input will contain the ending word
 
-Your goal is to find the lowest possible “cost” of transforming the starting word into the ending word. You
-can use any word list you like -- feel free to include your word list or a link to it as part of your solution.
-(Depending on your word list, your answer might not be exactly the same as ours below.)
-Your solution should detect and handle invalid input, and return -1 if there is no solution.
+The goal is to find the lowest possible “cost” of transforming the starting word into the ending word. 
 
 Example input:
 
